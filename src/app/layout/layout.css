@@ -18,13 +18,13 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 0.25rem;
-  align-items: center;
+
 }
 nav ul li {
   margin: 0;
 
   float: none;
-  font-size: 1.05rem;
+  font-size: 1.20rem;
 }
 
 

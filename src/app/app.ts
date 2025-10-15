@@ -1,15 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Layout } from './layout/layout';
-import { Home } from './home/home';
-
+import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',
-  imports: [Layout],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet],
+  template: '<router-outlet></router-outlet>'
 })
-export class App {
-  protected readonly title = signal('ManacoA11y');
-}
+export class App {}
